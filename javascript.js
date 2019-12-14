@@ -71,3 +71,19 @@ function singleRound(computerSelection, playerSelection) {
         console.log(`You Lose! ${computerSelection} beats ${playerSelection}!`);
     }
 }
+
+function game() {
+    let count = 0;
+    for (let i = 0; i < 5; i ++) {
+        userInput();
+        computerPlay();
+        singleRound(computer, player);
+        count = count + winner;
+    }
+    if (count > 0) {
+        console.log("Congratulations, You Win!");
+    }
+    else {
+        console.log("YOU LOSE!");
+    }
+}
