@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>rock-paper-scissor</title>
 </head>
 <body>
+    <div id="header">
+        <h1>Let's play "Rock - Paper - Scissor"!</h1>
+    </div>
+    <div id="score">
+        <table>
+            <col width="130">
+            <col width="130">
+            <tr>
+                <th>USER</th>
+                <th>PC</th>
+            </tr>
+            <tr>
+                <td id="userScore">0</td>
+                <td id="pcScore">0</td>
+            </tr>
+        </table>
+        <p></p>
+        <button id="reset">RESET</button>
+    </div>
+    <div id="icons">
+        <button id="rock"><img src="https://icon-library.net/images/rock-paper-scissors-icon/rock-paper-scissors-icon-14.jpg" alt="rock icon"></button>
+        <button id="paper"><img src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-005-512.png" alt="paper icon"></button>
+        <button id="scissor"><img src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-009-512.png" alt="scissor icon"></button>
+    </div>
     <script src="javascript.js"></script>
-    <script>userInput();</script>
-    <script>computerPlay();</script>
-    <script>singleRound(computer, player);</script>
 </body>
-</html>
