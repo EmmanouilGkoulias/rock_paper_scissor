@@ -99,4 +99,5 @@ reset.addEventListener('click', event => {
     userScore.innerHTML = '0';
     pcCount = 0;
     userCount = 0;
+    message.innerHTML = '';
 });
